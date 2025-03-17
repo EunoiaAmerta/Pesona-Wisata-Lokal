@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pilihan Akomodasi</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Pesona Lokal</div>
+        <ul>
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="../destinasi/destinasi.html">Destinasi</a></li>
+          <li><a href="../kuliner/kuliner.html">Kuliner</a></li>
+          <li><a href="#akomodasi">Akomodasi</a></li>
+          <li><a href="#peta">Peta</a></li>
+          <li><a href="#bantuan">Bantuan</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Pilihan Akomodasi Terbaik</h1>
+      </div>
+    </header>
+
+    <section id="filter" class="section">
+      <h2>Filter Akomodasi</h2>
+      <div class="filter-container">
+        <select id="provinsi">
+          <option value="">Semua Provinsi</option>
+          <option value="Papua Barat">Papua Barat</option>
+          <option value="Jawa Timur">Jawa Timur</option>
+          <option value="Aceh">Aceh</option>
+        </select>
+        <select id="jenis">
+          <option value="">Semua Jenis</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Villa">Villa</option>
+          <option value="Resort">Resort</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="akomodasi-list" class="section">
+      <div class="grid">
+        <div class="card" data-provinsi="Papua Barat" data-jenis="Resort">
+          <img
+            src="../images/Korpak Villa & Resort Raja Ampa.jpg"
+            alt="Akomodasi 1"
+          />
+          <h3>Korpak Villa & Resort Raja Ampat</h3>
+          <p>
+            Korpak Villa & Resort Raja Ampat adalah penginapan mewah di Waigeo,
+            Raja Ampat, yang menawarkan vila dan bungalow dengan pemandangan
+            laut.
+          </p>
+        </div>
+        <div class="card" data-provinsi="Jawa Timur" data-jenis="Villa">
+          <img src="../images/villa-lembah-kelud-2.jpg" alt="Akomodasi 2" />
+          <h3>Villa Glamping Lembah Kelud</h3>
+          <p>
+            Vila Lembah Kelud di Kabupaten Kediri menawarkan akomodasi glamping
+            dengan lodge kayu berbentuk segitiga di tengah perkebunan subur.
+          </p>
+        </div>
+        <div class="card" data-provinsi="Aceh" data-jenis="Hotel">
+          <img src="../images/Lido-Aceh.jpg" alt="Akomodasi 3" />
+          <h3>Lido Graha Hotel</h3>
+          <p>
+            Lido Graha Hotel adalah hotel bintang tiga di Lhokseumawe, Aceh
+            Utara, yang menawarkan kamar nyaman dengan fasilitas modern.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Pesona Wisata Lokal</p>
+    </footer>
+
+    <script src="script-akomodasi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuliner Khas Lokal</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Pesona Lokal</div>
+        <ul>
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="../destinasi/destinasi.html">Destinasi</a></li>
+          <li><a href="#kuliner">Kuliner</a></li>
+          <li><a href="#akomodasi">Akomodasi</a></li>
+          <li><a href="#peta">Peta</a></li>
+          <li><a href="#bantuan">Bantuan</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Kuliner Khas Lokal Pilihan</h1>
+      </div>
+    </header>
+
+    <section id="filter" class="section">
+      <h2>Filter Kuliner</h2>
+      <div class="filter-container">
+        <select id="provinsi">
+          <option value="">Semua Provinsi</option>
+          <option value="Papua Barat">Papua Barat</option>
+          <option value="Jawa Timur">Jawa Timur</option>
+          <option value="Aceh">Aceh</option>
+        </select>
+        <select id="jenis">
+          <option value="">Semua Jenis</option>
+          <option value="Makanan Berat">Makanan Berat</option>
+          <option value="Makanan Ringan">Makanan Ringan</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="kuliner-list" class="section">
+      <div class="grid">
+        <div
+          class="card"
+          data-provinsi="Papua Barat"
+          data-jenis="Makanan Berat"
+        >
+          <img src="../images/02_IKAN_BAKAR_MANOKWARI.webp" alt="Kuliner 1" />
+          <h3>Ikan Bakar Manokwari</h3>
+          <p>
+            Ikan segar yang dibakar dengan bumbu khas Papua, disajikan dengan
+            sambal khas Manokwari yang pedas dan segar.
+          </p>
+        </div>
+        <div
+          class="card"
+          data-provinsi="Jawa Timur"
+          data-jenis="Makanan Ringan"
+        >
+          <img
+            src="../images/tahu-takwa-636cc4b717698352804ecb42.jpg"
+            alt="Kuliner 2"
+          />
+          <h3>Tahu Kuning</h3>
+          <p>
+            Tahu khas Kediri berwarna kuning dengan tekstur lembut di dalam dan
+            renyah di luar. Biasanya disajikan dengan sambal petis.
+          </p>
+        </div>
+        <div class="card" data-provinsi="Aceh" data-jenis="Makanan Berat">
+          <img
+            src="../images/ilustrasi-sie-reuboh-daging-rebus-khas-aceh_169.jpeg"
+            alt="Kuliner 3"
+          />
+          <h3>Sie Reuboh</h3>
+          <p>
+            Daging sapi atau kambing yang dimasak dengan cuka, cabai, dan rempah
+            khas Aceh, menghasilkan cita rasa asam, pedas, dan gurih.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Pesona Wisata Lokal</p>
+    </footer>
+
+    <script src="script-kuliner.js"></script>
+  </body>
+</html>
